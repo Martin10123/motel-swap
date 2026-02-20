@@ -15,7 +15,7 @@ export function MainLayout() {
     }
 
     return (
-        <div className="min-h-screen bg-gray-50">
+        <div className="min-h-screen bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950">
             <Navbar onMenuClick={handleToggleSidebar} />
 
             {/* Main content area */}

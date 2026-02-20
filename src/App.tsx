@@ -1,7 +1,9 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import { LoginPage, RegisterPage, ForgotPasswordPage } from './features/auth/pages'
+import { RoomsPage } from './features/rooms/pages'
 import { MainLayout } from './components/layout'
 import { DashboardPage } from './pages/DashboardPage'
+import { ReservationsPage } from './pages/ReservationsPage'
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
         <Route path="/" element={<MainLayout />}>
           <Route index element={<Navigate to="/dashboard" replace />} />
           <Route path="dashboard" element={<DashboardPage />} />
+          <Route path="habitaciones" element={<RoomsPage />} />
+          <Route path="reservas" element={<ReservationsPage />} />
           {/* Add more protected routes here */}
         </Route>
       </Routes>
